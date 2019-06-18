@@ -1,0 +1,11 @@
+﻿@model Dictionary<string, object>
+<div class="bg-primary m-1 p-1 text-white"><h4>Kullanıcı Detayları</h4></div>
+
+<table class="table table-sm table-border m-1 p-1">
+    @if(Model != null){
+        foreach (var kvp in Model)
+        {
+            <tr><th>@kvp.Key</th><td>@kvp.Value</td></tr>
+        }
+    }
+</table>
